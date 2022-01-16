@@ -9,17 +9,19 @@ from rest_framework.utils.serializer_helpers import ReturnDict, ReturnList
 from rest_framework import response, status
 from rest_framework.utils.serializer_helpers import ReturnDict, ReturnList
 from backend.models.capacity import Capacity
-from backend.rest_api.serializers import AppointmentSerializer
+from backend.serializers import AppointmentSerializer
 from django.core.serializers.json import DjangoJSONEncoder
 import io
 from rest_framework.parsers import JSONParser
 
 
 from backend.models.appointment import Appointment
-from backend.views import addTime
 
 from .decorators import action
 from djangochannelsrestframework.settings import api_settings
+
+def addTime(setTime, timeToAdd):
+    return ((datetime.combine(date.today(), setTime) + timeToAdd).time()) 
 
 class CreateAppointmentMixin:
 

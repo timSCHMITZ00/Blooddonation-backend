@@ -1,6 +1,4 @@
-from datetime import datetime
-from typing_extensions import Required
-from rest_framework import fields, serializers, viewsets
+from rest_framework import serializers
 from backend.models.appointment import Appointment
 from backend.models.donationQuestion import DonationQuestion
 from backend.models.person import Person

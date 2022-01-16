@@ -9,7 +9,7 @@ from .customMixins.getAllCapacitiesMixin import GetAllCapacitiesMixin
 from .customMixins.getAllAppointmentsMixin import GetAllAppointmentsMixin
 from .customMixins.deleteCapacityMixin import DeleteCapacityMixin
 from .customMixins.createCapacitiesMixin import CreateCapacitiesMixin
-from backend.rest_api.serializers import AppointmentSerializer
+from backend.serializers import AppointmentSerializer
 from backend.models.appointment import Appointment
 
 

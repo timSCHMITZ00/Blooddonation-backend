@@ -6,7 +6,7 @@ from backend.models.person import Person
 from backend.models.request import Request
 from backend.models.capacity import Capacity
 
-# how das the admin interface looks loke
+# how the admin interface looks like
 # Register your models here. To see them in the admin interface
 
 admin.site.register(Appointment)
